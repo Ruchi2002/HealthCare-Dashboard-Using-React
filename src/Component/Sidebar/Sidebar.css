@@ -1,0 +1,149 @@
+.sidebar {
+  max-width: 250px;
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-color: #f9fbfe;
+  padding: 30px 20px 30px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+  border-radius: 24px 0 0 24px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+
+.logo .blue {
+  color: #00c6ff;
+}
+
+.logo .dark {
+  color: #1e1e4b;
+}
+
+.menu-title {
+  font-size: 16px;
+  color: #b0b0b0;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding-left: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+li {
+  font-size: 16px;
+  color: #a0a0a0;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* You can remove the hover effect if you're using just active state:
+li:hover {
+  background-color: #eef3fa;
+  color: #1e1e4b;
+}
+*/
+
+li.active {
+  color: #1e1e4b;
+  font-weight: 600;
+  background-color: #eef3fa;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 16px;
+  flex: 1;
+}
+
+li:hover a,
+li.active a {
+  color: #1e1e4b;
+  font-weight: 600;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e1e4b;
+  /* remove width/height/bg-color here if using Lucide icons only */
+}
+
+.setting {
+  font-size: 16px;
+  color: #a0a0a0;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: color 0.2s;
+}
+
+.setting:hover {
+  color: #1e1e4b;
+}
+
+
+
+
+
+
+/* responsiveness */
+
+/* Hamburger default hidden */
+.hamburger {
+  display: none;
+}
+
+/* Show hamburger on small screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1100;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .sidebar.show {
+    transform: translateX(0);
+  }
+}

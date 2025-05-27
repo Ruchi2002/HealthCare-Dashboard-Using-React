@@ -1,0 +1,102 @@
+.dashboard-layout{
+    display: flex;
+     font-family: 'Poppins', sans-serif;
+}
+
+.main-content {
+    display: flex;
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+    flex: 1;
+    padding  : 20px;
+    flex-wrap: wrap;
+}
+
+.main-layout--left{
+ flex: 1;
+ padding: 0 20px;
+}
+.main-layout--left h1{
+    color:#1e1e4b ;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-layout--right{
+    flex: 1;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.flex-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  color: #5d5fef;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  transition: color 0.2s ease;
+}
+
+.btn:hover {
+  color: #3e40c9;
+}
+
+.chevron-icon {
+  font-size: 12px;
+}
+.detail-btn{
+    margin-left: 85%;
+}
+
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .main-layout--right {
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px;
+  }
+
+  .heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .body-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .organ-card {
+    width: 100%;
+  }
+}
+

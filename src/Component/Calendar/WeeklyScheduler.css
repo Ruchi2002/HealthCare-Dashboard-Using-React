@@ -1,0 +1,88 @@
+.scheduler-container {
+  padding: 20px;
+  font-family: sans-serif;
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.nav-buttons span {
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.schedule-grid {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+}
+
+.day-column {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-column.active {
+  background: #f1f5ff;
+}
+
+.day-header {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.day-header span:nth-child(1){
+  font-size: 14px;
+  color: rgb(22 21 83);
+}
+
+.day-header span:nth-child(2){
+  font-size: 28px;
+  color: rgb(22 21 83);
+}
+
+.slots-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  max-height: 150px;
+  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer and Edge */
+}
+
+.slots-scroll::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+
+.slot {
+  padding: 6px 10px;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.slot.selected {
+  background-color: #4b3de5;
+  color: white;
+  font-weight: bold;
+}

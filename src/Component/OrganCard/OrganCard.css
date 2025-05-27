@@ -1,0 +1,42 @@
+.organ-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #f9f9f9;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 32px;
+}
+
+h4 {
+  margin: 0;
+  color: #2e2e2e;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.date {
+  margin: 10px 0;
+  font-size: 13px;
+  color: #888;
+}
+
+.progress-bar {
+  width: 150px;
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 10px 0;
+}
+
+.progress {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease-in-out;
+}
