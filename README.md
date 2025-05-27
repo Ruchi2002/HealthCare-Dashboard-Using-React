@@ -14,24 +14,7 @@ This project replicates a clean, user-friendly design showing calendar appointme
 
 ---
 
-## 📁 Folder Structure
-src/
-├── Component/
-│ ├── Header/
-│ ├── Sidebar/
-│ ├── Calendar/
-│ ├── BodyStatus/
-│ ├── OrganStatus/
-│ ├── ActivityGraph/
-│ ├── UpcomingSchedule/
-│ └── ThisWeekButton/
-├── DashboardLayout/
-│ ├── DashboardLayout.jsx
-│ └── DashboardLayout.css
-└── App.js
 
-
----
 
 ## ✨ Features
 
